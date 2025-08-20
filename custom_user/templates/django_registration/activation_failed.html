@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Activation Failed | Blango
+{% endblock %}
+
+{% block content %}
+    <div class="row justify-content-center"> 
+        <div class="col col-md-6">
+            <center><h2>Activation Failed</h2></center>
+            <p>An Error occured while activating your account.
+            {{ activation_error.message }}</p>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags blog_extras %}
+
+{% block title %}
+    Registration | Blango
+{% endblock %}
+
+{% block content %}
+    {% row "justify-content-center" %}
+        {% col "col-md-6" %}
+            <center><h2>Regsiter for Blango</h2></center>
+            <form method="post" action="{% url 'django_registration_register' %}">
+                {{ form|crispy }}
+                {% csrf_token %}
+                <button class="btn btn-secondary" type="submit">Register</button>
+            </form>
+            <!-- {% crispy form %} -->
+        {% endcol %}
+    {% endrow %}
+{% endblock %}

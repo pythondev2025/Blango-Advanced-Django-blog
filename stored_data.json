@@ -1,0 +1,314 @@
+[
+    {
+        "model": "blog.comment",
+        "pk": 1,
+        "fields": {
+            "creator": 1,
+            "content": "What a great post!",
+            "content_type": 8,
+            "object_id": 1,
+            "created_at": "2025-07-16T19:34:01.929Z",
+            "modified_at": "2025-07-16T19:34:01.953Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 2,
+        "fields": {
+            "creator": 1,
+            "content": "I just commented on myself",
+            "content_type": 4,
+            "object_id": 1,
+            "created_at": "2025-07-16T19:34:01.929Z",
+            "modified_at": "2025-07-16T19:34:01.953Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 4,
+        "fields": {
+            "creator": 1,
+            "content": "Its the comment created using Generic Relations.",
+            "content_type": 8,
+            "object_id": 1,
+            "created_at": "2025-07-16T19:34:01.929Z",
+            "modified_at": "2025-07-16T19:34:01.953Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 5,
+        "fields": {
+            "creator": 1,
+            "content": "its the first cimment haha",
+            "content_type": 8,
+            "object_id": 2,
+            "created_at": "2025-07-22T09:44:09.790Z",
+            "modified_at": "2025-07-22T09:44:09.790Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 6,
+        "fields": {
+            "creator": 1,
+            "content": "nice post :)",
+            "content_type": 8,
+            "object_id": 5,
+            "created_at": "2025-07-22T11:54:24.603Z",
+            "modified_at": "2025-07-22T11:54:24.603Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 7,
+        "fields": {
+            "creator": 1,
+            "content": "worse post",
+            "content_type": 8,
+            "object_id": 5,
+            "created_at": "2025-07-22T11:54:38.233Z",
+            "modified_at": "2025-07-22T11:54:38.233Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 8,
+        "fields": {
+            "creator": 1,
+            "content": "nice",
+            "content_type": 8,
+            "object_id": 5,
+            "created_at": "2025-07-22T13:08:05.354Z",
+            "modified_at": "2025-07-22T13:08:05.354Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 10,
+        "fields": {
+            "creator": 1,
+            "content": "very short and boring post",
+            "content_type": 8,
+            "object_id": 2,
+            "created_at": "2025-07-24T23:06:24.853Z",
+            "modified_at": "2025-07-24T23:06:24.853Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 11,
+        "fields": {
+            "creator": 1,
+            "content": "It's really wonderful that you have seen my Post",
+            "content_type": 8,
+            "object_id": 1,
+            "created_at": "2025-07-25T01:03:47.059Z",
+            "modified_at": "2025-07-25T01:03:47.059Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 12,
+        "fields": {
+            "creator": 1,
+            "content": "It's really wonderful that you have seen my Post",
+            "content_type": 8,
+            "object_id": 2,
+            "created_at": "2025-07-25T01:03:47.059Z",
+            "modified_at": "2025-07-25T01:03:47.059Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 13,
+        "fields": {
+            "creator": 1,
+            "content": "It's really wonderful that you have seen my Post",
+            "content_type": 8,
+            "object_id": 3,
+            "created_at": "2025-07-25T01:03:47.059Z",
+            "modified_at": "2025-07-25T01:03:47.059Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 14,
+        "fields": {
+            "creator": 2,
+            "content": "It's really wonderful that you have seen my Post",
+            "content_type": 8,
+            "object_id": 4,
+            "created_at": "2025-07-25T01:03:47.059Z",
+            "modified_at": "2025-07-25T01:03:47.059Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 15,
+        "fields": {
+            "creator": 2,
+            "content": "It's really wonderful that you have seen my Post",
+            "content_type": 8,
+            "object_id": 5,
+            "created_at": "2025-07-25T01:03:47.059Z",
+            "modified_at": "2025-07-25T01:03:47.059Z"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 1,
+        "fields": {
+            "author": 1,
+            "created_at": "2025-07-14T21:22:32.474Z",
+            "modified_at": "2025-07-16T19:40:17.747Z",
+            "published_at": "2025-07-15T21:22:52Z",
+            "title": "The First Post",
+            "slug": "this-first-post",
+            "summary": "This is the summary of the first tag.",
+            "content": "This is the main conent haha.",
+            "tags": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 2,
+        "fields": {
+            "author": 1,
+            "created_at": "2025-07-17T01:49:37.264Z",
+            "modified_at": "2025-07-17T01:49:37.264Z",
+            "published_at": "2025-07-18T01:46:53Z",
+            "title": "Advanced Django - The Complete Course",
+            "slug": "advanced-django-the-complete-course",
+            "summary": "This Course would cover the advanced concepts of Django.",
+            "content": "This Course would cover the advanced concepts of Django. Starting from the models and moving upto advanced concepts like deployment and alot of other stuffs as well.",
+            "tags": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 3,
+        "fields": {
+            "author": 1,
+            "created_at": "2025-07-17T01:50:27.979Z",
+            "modified_at": "2025-07-17T01:50:27.979Z",
+            "published_at": "2025-07-18T01:50:22Z",
+            "title": "Django Rest Framework",
+            "slug": "django-rest-framework",
+            "summary": "This Course would cover the advanced concepts of Django.",
+            "content": "This Course would cover the advanced concepts of Django. Starting from the models and moving upto advanced concepts like deployment and alot of other stuffs as well.",
+            "tags": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 4,
+        "fields": {
+            "author": 2,
+            "created_at": "2025-07-17T01:52:07.960Z",
+            "modified_at": "2025-07-17T03:43:16.569Z",
+            "published_at": "2025-07-18T01:50:34Z",
+            "title": "Django RestFul APIs - Advanced Concepts",
+            "slug": "django-restful-apis-advanced-concepts",
+            "summary": "This Course would cover the advanced concepts of Django RestFul APIs.",
+            "content": "This Course would cover the advanced concepts of Django RestFul APIs. Starting from the models and moving upto advanced concepts like deployment and alot of other stuffs as well. And integrating with the Different RestFul APIs.",
+            "tags": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 5,
+        "fields": {
+            "author": 2,
+            "created_at": "2025-07-22T05:35:43.993Z",
+            "modified_at": "2025-07-22T05:35:43.993Z",
+            "published_at": "2025-07-23T05:33:07Z",
+            "title": "Freshly Added Post",
+            "slug": "freshly-added-post",
+            "summary": "This is the Post I added just now.",
+            "content": "This post is added just now for the testing purposes. It would be used for the testing of models in the templates tag, and it's  of very important use.",
+            "tags": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 1,
+        "fields": {
+            "value": "the first tag"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 2,
+        "fields": {
+            "value": "the 2nd tag"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 3,
+        "fields": {
+            "value": "trending"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 4,
+        "fields": {
+            "value": "latest"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 5,
+        "fields": {
+            "value": "news"
+        }
+    },
+    {
+        "model": "custom_user.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$1000000$H6vn5kLqtcATGRMLeR3vjl$IjgI+66C6CtOuLWT82FJ5rF2IuSlX/SJt8u3GduvExo=",
+            "last_login": "2025-07-22T11:13:35.176Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "Site",
+            "last_name": "Admin",
+            "email": "contact@admin.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2025-07-14T05:39:56Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "custom_user.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$1000000$qPTymOiULu4DTZ9sDCZKWB$qUWV9mmRGF9jxvPRCoKdMuH/RUa8xfJZrvmNZsfyeEg=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "cr7",
+            "first_name": "Christiano",
+            "last_name": "Ronaldo",
+            "email": "contact@cr7.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2025-07-17T03:41:02Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

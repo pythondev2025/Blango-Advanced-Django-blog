@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags blog_extras %}
+
+{% block title %}
+    Confirm Your Email | Blango
+{% endblock %}
+
+{% block content %}
+    {% row "justify-content-center" %}
+        {% col "col-md-6" %}
+            <center><h2>Confirm Your Email</h2></center>
+            <p>Thank You for Registring on Blango. The confirmation link has been sent to your Email account.
+                Click on that link to complete registration.
+            </p>
+        {% endcol %}
+    {% endrow %}
+{% endblock %}

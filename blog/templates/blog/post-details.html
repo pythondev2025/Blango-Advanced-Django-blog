@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load blog_extras cache %}
+
+{% block title %}
+    {{ post.title }} | Blango
+{% endblock %}
+
+{% block content %}
+    <h2>{{ post.title }}</h2>
+    {% row %}
+        {% col %}
+            {% include "components/author-details.html" %}
+        {% endcol %}
+    {% endrow %}
+
+    {% row %}
+        {% col %}
+            {{ post.content }}
+        {% endcol %}
+    {% endrow %}
+
+    {% if post.author.profile %}
+        {% row %}
+            {% col %}
+                <h4>About the Author</h4>
+                <p>{{ post.author.profile.bio }}</p>
+            {% endcol %}
+        {% endrow %}
+    {% endif %}
+
+    {% include "components/post-comments.html" %}
+
+    {% row %}
+        {% col %}
+            {% cache 3600 recent_posts post %}
+            {% recent_posts post %}
+            {% endcache %}
+        {% endcol %}
+    {% endrow %}
+{% endblock %}

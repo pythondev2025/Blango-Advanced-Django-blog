@@ -1,0 +1,46 @@
+{% load blog_extras %}
+{% load crispy_forms_tags %}
+<style>
+    .asteriskField {
+    display: none;
+}
+</style>
+
+<h4>Comments</h4>
+{% for comment in post.comments.all %}
+    {% row "border-top pt-2" %}
+        {% col %}
+            <p>{{ comment.content }}</p>
+        {% endcol %}
+    {% endrow %}
+
+    {% row "border-bottom" %}
+        {% col %}
+            <small>{{ comment.creator }} | {{ comment.created_at|date:"M d, Y h:i" }}</small>
+        {% endcol %}
+    {% endrow %}
+{% empty %}
+    {% row "border-top border-bottom" %}
+        {% col %}
+            <p>No Comments</p>
+        {% endcol %}
+    {% endrow %}
+{% endfor %}
+
+{% row "mt-4" %}
+    {% col %}
+    {% if request.user.is_authenticated %}
+        <h4>Add Comments</h4>
+         <!-- <form action="{% url 'post_details' post.slug %}" method="post">
+            {% csrf_token %}
+            {{ comment_form|crispy }}
+            <p>
+                <button type="submit" class="btn btn-primary">
+                    Comment
+                </button>
+            </p>
+         </form> -->
+         {% crispy comment_form %}
+    {% endif %}
+    {% endcol %}
+{% endrow %}
